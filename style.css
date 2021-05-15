@@ -9,6 +9,7 @@ body {
 	background-size: cover;
 	background-image: url("wallpapers/three.jpg");
 	background-position-y: 0;
+	user-select: none;
 }
 
 #loader {
