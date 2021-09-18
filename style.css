@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+
+#ind-body {
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-image: url("wallpapers/three.jpg");
+	background-position-y: 0;
+	user-select: none;
+}
+
+#loader {
+	position: absolute;
+	height: 0;
+	width: 0;
+	opacity: 0;
+	animation-name: loadanim;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	background-position: center;
+	background-image: url("load.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 3;
+}
+
+@keyframes loadanim {
+	0% {
+		height: 100%;
+		width: 100%;
+		opacity: 1;
+	}
+	90% {
+		height: 100%;
+		width: 100%;
+		opacity: 1;
+	}
+	95% {
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+	}
+	100% {
+		height: 0;
+		width: 0;
+		opacity: 0;
+	}
+}
+
+#content {
+	margin: none;
+	padding: 5%;
+	height: 50%;
+	width: 50%;
+	position: absolute;
+	padding-top: 0;
+	padding-bottom: 0;
+	left: 15%;
+	top: 20%;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.664);
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+}
+
+#content-help {
+	margin: none;
+	padding: 5%;
+	height: 70%;
+	width: 70%;
+	position: absolute;
+	padding-top: 0;
+	padding-bottom: 0;
+	left: 10%;
+	top: 10%;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.664);
+	overflow-y: scroll;
+	user-select: text;
+}
+
+video {
+	height: 90%;
+	width: auto;
+	border-radius: 10px;
+}
+
+#head {
+	font-family: "Oswald", sans-serif;
+	font-size: 3vw;
+	color: rgb(43, 128, 207);
+	letter-spacing: 1px;
+}
+
+#text {
+	font-family: "Oswald", sans-serif;
+	font-size: 1.5vw;
+	color: rgb(47, 124, 196);
+}
+
+#text-help {
+	font-family: "Oswald", sans-serif;
+	font-size: 1.2vw;
+	color: rgb(47, 124, 196);
+}
+
+.highlight {
+	width: max-content;
+	color: rgb(36, 91, 173);
+	display: inline;
+	transition: all 0.4s;
+	text-decoration: none;
+}
+
+.highlight:hover {
+	color: #d77c82;
+}
+
+#download {
+	font-family: "Oswald", sans-serif;
+	font-size: 1.5vw;
+	color: rgb(255, 255, 255);
+	width: max-content;
+	padding: 5px;
+	padding-left: 7px;
+	padding-right: 7px;
+	border-radius: 1.5vw;
+	background-color: rgb(192, 40, 19);
+	transition: all 0.5s;
+}
+
+#download:hover {
+	background-color: rgb(255, 35, 6);
+}
+
+#button_link {
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+#bottoms {
+	position: absolute;
+	bottom: 5%;
+	left: 15%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 50%;
+}
+
+.credit {
+	margin: none;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.664);
+	font-family: "Oswald", sans-serif;
+	font-size: 1.5vw;
+	color: rgb(43, 137, 226);
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	transition: all 0.5s;
+}
+
+.credit:hover {
+	background-color: rgb(255, 255, 255);
+}
